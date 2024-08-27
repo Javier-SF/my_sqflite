@@ -45,7 +45,7 @@ class _AddUsersState extends State<AddUsers> {
                         if (value == null || value.isEmpty) {
                           return "El nombre es obligatorio";
                         }
-                        final regex = RegExp(r'^[a-zA]+$');
+                        final regex = RegExp(r'^[a-zA-Z]+( [a-zA-Z]+)?$');
                         if (!regex.hasMatch(value)) {
                           return "Solo deben tener letras";
                         }
@@ -63,7 +63,7 @@ class _AddUsersState extends State<AddUsers> {
                           return "El apellido es obligatorio";
                         }
 
-                        final regex = RegExp(r'^[a-zA]+$');
+                        final regex = RegExp(r'^[a-zA-Z]+( [a-zA-Z]+)?$');
                         if (!regex.hasMatch(value)) {
                           return "Solo deben tener letras";
                         }
