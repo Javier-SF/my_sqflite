@@ -1,18 +1,5 @@
-buildscript {
-    ext.kotlin_version = '1.7.10'
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-86
-}
-
-}
-
 allprojects {
+    ext.kotlin_version = '1.7.0'
     repositories {
         google()
         mavenCentral()
